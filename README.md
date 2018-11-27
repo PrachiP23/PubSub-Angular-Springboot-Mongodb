@@ -14,12 +14,12 @@ Following instructions will get you a copy of the project up and running on your
 
 The application has 3 parts:
 
-1. ** Clone the application : **
+1. **Clone the application**
 ```bash
 git clone https://github.com/PrachiP23/pubsub-angular-springboot-mongodb.git
 ```
 
-2. ** Build and run the backend app using maven **
+2. **Build and run the backend app using maven**
 ```bash
 cd SpringMongoDb
 mvn package
@@ -28,7 +28,7 @@ java -jar target\spring-boot-rest-mongodb-0.0.1-SNAPSHOT.jar
 
 The backend server will start at <http://localhost:8080>.
 
-3. ** Run the frontend Angular app using npm **
+3. **Run the frontend Angular app using npm**
 ```bash
 cd AngularApp
 npm install
@@ -37,10 +37,10 @@ npm start
 Frontend server will run on <http://localhost:4200>.
 
 ### App Demo:
-1. ** Subscribe to topics **
+1. **Subscribe to topics**
 ![](gifs/subscribe.gif)
 
 
-2. ** Publish Message **
+2. **Publish Message**
     Notify message to the subscribers of the topic.
 ![](gifs/publish.gif)
