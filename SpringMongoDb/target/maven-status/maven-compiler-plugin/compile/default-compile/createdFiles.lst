@@ -1,0 +1,11 @@
+com\javasampleapproach\springrest\mongodb\model\Subscriber.class
+com\javasampleapproach\springrest\mongodb\repo\CustomerRepository.class
+com\javasampleapproach\springrest\mongodb\controller\CustomerController.class
+com\javasampleapproach\springrest\mongodb\model\TopicContent.class
+com\javasampleapproach\springrest\mongodb\controller\PubSubController.class
+com\javasampleapproach\springrest\mongodb\model\Customer.class
+com\javasampleapproach\springrest\mongodb\SpringRestMongoDbApplication.class
+com\javasampleapproach\springrest\mongodb\controller\Service\PublisherService.class
+com\javasampleapproach\springrest\mongodb\model\PubMessage.class
+com\javasampleapproach\springrest\mongodb\repo\PublisherRepository.class
+com\javasampleapproach\springrest\mongodb\repo\SubscriberRepository.class

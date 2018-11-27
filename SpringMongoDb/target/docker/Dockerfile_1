@@ -1,0 +1,4 @@
+FROM java:8
+ADD /spring-boot-rest-mongodb-0.0.1-SNAPSHOT.jar //
+EXPOSE 8080
+ENTRYPOINT ["java", "-Dspring.data.mongodb.uri=mongodb://mongocontainer/test", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/spring-boot-rest-mongodb-0.0.1-SNAPSHOT.jar"]

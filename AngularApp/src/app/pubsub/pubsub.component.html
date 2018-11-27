@@ -1,0 +1,51 @@
+
+<h2> Publishers </h2>
+
+<div id='publisher-list'>     
+    <div class='publisher' *ngFor="let pub of allpubs; let i= index;">
+        <input style="margin:10px" placeholder="Publisher Name" [(ngModel)]="pub.pubName" required name="pubname" readonly>
+        <input style="margin:10px" placeholder="Topic" [(ngModel)]="pub.topic" required name="topic">
+        <input style="margin:10px" placeholder="Content" [(ngModel)]="pub.content" required name="pubname">
+
+        <button style="display:flex; margin:10px" class='btn btn-default' (click) = "publishMessage(i, pub.topic, pub.content);">Publish</button>
+        <table style="width:100%">
+          <tr>
+              <th>Topic</th>
+              <th>Content</th>
+          </tr>
+          <tr *ngFor = "let tc of pub.topContUI">
+              <td>{{tc.topic}}</td>
+              <td>{{tc.content}}</td>
+          </tr>
+          
+          
+        </table> 
+    </div> 
+    
+    <br style='clear:both'/> 
+  </div>
+
+  
+  <h2> Subscribers </h2>
+  
+  <div id='subscriber-list'>
+      <div class='subscriber' *ngFor="let sub of allsubs; let i=index">
+              <input style="margin:10px;" placeholder="Sublisher Name" [(ngModel)]="sub.subName" required name="subname" readonly><br>
+              <input style="margin:10px" placeholder="Add Topic" [(ngModel)]="sub.topic" required name="topic">
+     
+              <button style="display:flex; margin:10px" class='btn btn-default' (click) = "subscribeT(i, sub.topic);">Subscribe</button>
+              <h6>Following</h6>
+              <ul class='topics' *ngFor="let t of sub.topicArrUI">
+                  <li>{{t}}</li>
+              </ul>
+          
+              <h6>Notices</h6>
+              <ul class='notifications'  *ngFor="let c of sub.contentArr">
+                <li>{{c}}</li>  
+              </ul>
+             
+      </div>
+      
+      <br style='clear:both' />
+    </div>
+  
