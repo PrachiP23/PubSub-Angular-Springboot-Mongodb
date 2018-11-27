@@ -37,10 +37,12 @@ npm start
 Frontend server will run on <http://localhost:4200>.
 
 ### App Demo:
-1. **Subscribe to topics**
-![](gifs/subscribe.gif)
+1. **Subscribe to topics**  
+
+![](gifs/subscribe.gif)  
 
 
-2. **Publish Message**
-    Notify message to the subscribers of the topic.
+2. **Publish Message**  
+    Notify message to the subscribers of the topic.  
+
 ![](gifs/publish.gif)
