@@ -1,14 +1,17 @@
 # Pub/Sub Model using Angular-Springboot-Mongodb
 In a Publisher/Subscriber model, any message published by the publisher to a topic, is immediately received by all the subscribers of the topic.
 
-##Pre-requisites:
+## Getting Started
+Following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Pre-requisites:
 1. Java - 1.8.x
 2. Maven - 3.x.x
 3. NodeJS - 8.x or 10.x
-4. MongoDB 
+4. MongoDB
 
-## Steps to Setup:
-Following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### Steps to Setup:
+
 The application has 3 parts:
 **1. Clone the application :
 ```bash
